@@ -24,8 +24,8 @@ Visual components and Python
 
 ## Program
 ```
-#Developed by : GOWTHAMMENAN A
-#Register No : 212225040100
+NAME : GOWTHAMMENAN A
+Register No : 212225040100
 ```
 ```python
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
