@@ -17,17 +17,15 @@ Visual components and Python
 
 
 ## Experiment:
-![image](https://github.com/gauthamkrishna7/Open-Jacson-Networks/assets/141175025/d0aabb12-9786-4ea5-97b8-97cf8cf06ca2)
 
-![image](https://github.com/gauthamkrishna7/Open-Jacson-Networks/assets/141175025/91947a8c-62cc-4d75-8430-177098b14f70)
+![image](exp6.png)
 
+## Program:
 
-## Program
 ```
 NAME : GOWTHAMMENAN A
-Register No : 212225040100
-```
-```python
+Reg No: 212225040100
+
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time1=float(input("Enter the mean  inter service time of Lathe Machine 1 (in secs) :  "))
 ser_time2=float(input("Enter the mean  inter service time of Lathe Machine 2 (in secs) :  "))
@@ -52,23 +50,25 @@ if (lam <  mu1) and (lam <  mu2) and (lam <  mu3):
     Wq2=Lq2/lam
     Wq3=Lq3/lam
     Ws=Ls/(3*lam)
-    print("Average number of objects in the system S1 : %0.2f "%Ls1)
-    print("Average number of objects in the system S2 : %0.2f "%Ls2)
-    print("Average number of objects in the system S3 : %0.2f "%Ls3)
-    print("Average number of objects in the overall system    : %0.2f "%Ls)
-    print("Average number of objects in the conveyor S1  :  %0.2f "%Lq1)
-    print("Average number of objects in the conveyor S2  :  %0.2f "%Lq2)
-    print("Average number of objects in the conveyor S3  :  %0.2f "%Lq3)
-    print("Average waiting time of an object in the conveyor S1 : %0.2f secs"%Wq1)
-    print("Average waiting time of an object in the conveyor S2 : %0.2f secs"%Wq2)
-    print("Average waiting time of an object in the conveyor S3 : %0.2f secs"%Wq3)
+    print(f"Average number of objects in the system S1 : {Ls1:.2f}")
+    print(f"Average number of objects in the system S2 : {Ls2:.2f}")
+    print(f"Average number of objects in the system S3 : {Ls3:.2f}")
+    print(f"Average number of objects in the overall system    : {Ls:.2f}")
+    print(f"Average number of objects in the conveyor S1  :  {Lq1:.2f}")
+    print(f"Average number of objects in the conveyor S2  :  {Lq2:.2f}")
+    print(f"Average number of objects in the conveyor S3  :  {Lq3:.2f}")
+    print(f"Average waiting time of an object in the conveyor S1 : {Wq:.2f} secs")
+    print(f"Average waiting time of an object in the conveyor S2 : {Wq2:.2f} secs")
+    print(f"Average waiting time of an object in the conveyor S3 : {Wq3:.2f} secs")
 else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("----------------------------------------------------------------------")
+
 ```
 
-## Output
-![image](https://github.com/gauthamkrishna7/Open-Jacson-Networks/assets/141175025/940c5255-8d3d-4bb5-86a8-4aa8408e830a)
+## Output:
 
-## Result
-The average number of material in the sysytem and in the conveyor and waiting time are successfully found.
+![image](output6.png)
+
+## Result:
+Thus a python program to find the average number of materials and waiting time in the system and conveyor has been written and executed successfully.
